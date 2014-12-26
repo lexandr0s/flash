@@ -43,8 +43,8 @@ fi
 case "$HOST" in
 	ufs910) echo "Creating flash image for $HOST..."
 		SIZE_KERNEL=0x190000
-		SIZE_ROOT=0xA70000
-		SIZE_VAR=0x3C0000
+		SIZE_ROOT=0xB40000
+		SIZE_VAR=0x2F0000
 		ERASE_SIZE=0x10000
 	;;
 	ufs922) echo "Creating flash image for $HOST..."
