@@ -6,8 +6,8 @@ if [ -d $CURDIR/../../source/libstb-hal-next ]; then
 	HAL_REV=_HAL-rev`cd $CURDIR/../../source/libstb-hal-next && git log | grep "^commit" | wc -l`-next
 elif [ -d $CURDIR/../../source/libstb-hal-cst-next ]; then
 	HAL_REV=_HAL-rev`cd $CURDIR/../../source/libstb-hal-cst-next && git log | grep "^commit" | wc -l`-github
-elif [ -d $CURDIR/../../source/libstb-hal-new ]; then
-	HAL_REV=_HAL-rev`cd $CURDIR/../../source/libstb-hal-new && git log | grep "^commit" | wc -l`-martii-github
+elif [ -d $CURDIR/../../source/libstb-hal-cst-next-new ]; then
+	HAL_REV=_HAL-rev`cd $CURDIR/../../source/libstb-hal-cst-next-new && git log | grep "^commit" | wc -l`-martii-github
 else
 	HAL_REV=_HAL-rev`cd $CURDIR/../../source/libstb-hal && git log | grep "^commit" | wc -l`
 fi
