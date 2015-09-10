@@ -81,8 +81,12 @@ rm -f $CURDIR/mtd_kernel.pad.bin
 #rm -f $CURDIR/mtd_root.sum.pad.bin
 rm -f $CURDIR/mtd_root.sum.bin
 cd $OUTDIR
+<<<<<<< HEAD
 #rm -rf $OUTDIR/*
 rm -f nmp_sdl_7111_NAND_$(date +%d%m%C%y).zip
 zip -j nmp_sdl_7111_NAND_$(date +%d%m%C%y).zip e2jffs2.img uImage
+=======
+zip -j $OUTFILE.zip e2jffs2.img uImage
+>>>>>>> 9d95aa11e6cd36961f28b77e36df3864e36d1b07
 rm -f $OUTDIR/e2jffs2.img
 rm -f $OUTDIR/uImage
